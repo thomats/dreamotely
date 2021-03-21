@@ -4,9 +4,17 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
 a {
   text-decoration: none;
   color: #3c3c3c;
+}
+
+h3 {
+  font-family: "Work Sans", Helvetica, sans-serif;
 }
 
 .container {
@@ -24,4 +32,11 @@ a {
   margin: 10px 0;
   padding: 10px;
   background-color: #f3f3f3;
+  .job-list-company {
+    font-size: 0.8rem;
+  }
+  .job-list-title {
+    font-size: 1.4rem;
+    margin: 5px 0;
+  }
 }
