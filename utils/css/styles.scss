@@ -1,3 +1,8 @@
+$primary-text: #3c3c3c;
+$purple: #9126b5;
+$green: #69f0ae;
+$white: #fff;
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +11,7 @@
 
 html {
   font-family: "Open Sans", Helvetica, sans-serif;
+  color: $primary-text;
 }
 
 a {
@@ -13,8 +19,28 @@ a {
   color: #3c3c3c;
 }
 
-h3 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "Work Sans", Helvetica, sans-serif;
+}
+
+.dot {
+  color: $green;
+}
+
+header {
+  border-top: 6px solid $purple;
+  padding: 10px 0;
+  .logo {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+  .hero {
+    margin: 20px 0;
+    text-align: center;
+  }
 }
 
 .container {
@@ -39,4 +65,9 @@ h3 {
     font-size: 1.4rem;
     margin: 5px 0;
   }
+}
+
+footer {
+  background-color: $primary-text;
+  color: $white;
 }

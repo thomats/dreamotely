@@ -7,6 +7,7 @@
 
 html {
   font-family: "Open Sans", Helvetica, sans-serif;
+  color: #3c3c3c;
 }
 
 a {
@@ -14,8 +15,30 @@ a {
   color: #3c3c3c;
 }
 
-h3 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "Work Sans", Helvetica, sans-serif;
+}
+
+.dot {
+  color: #69f0ae;
+}
+
+header {
+  border-top: 6px solid #9126b5;
+  padding: 10px 0;
+}
+
+header .logo {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+header .hero {
+  margin: 20px 0;
+  text-align: center;
 }
 
 .container {
@@ -48,5 +71,10 @@ h3 {
 .job-list-item .job-list-title {
   font-size: 1.4rem;
   margin: 5px 0;
+}
+
+footer {
+  background-color: #3c3c3c;
+  color: #fff;
 }
 /*# sourceMappingURL=styles.css.map */
