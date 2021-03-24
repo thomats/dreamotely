@@ -13,30 +13,41 @@
   </head>
   <body>
     <header>
-      <div class="navbar container">
-        <h1 class="logo">Dreamotely<span class="dot">.</span></h1>
-      </div>
-      <div class="hero container">
-        <h2>Find talent in the cloud</h2>
-        <button class="btn-newJob">Post a new job</button>
+      <div class="container">
+        <div class="navbar">
+          <h1 class="logo">Dreamotely<span class="dot">.</span></h1>
+          <nav>Navigation</nav>
+        </div>
       </div>
     </header>
     <main>
-      <section class="job-list container" id="development">
-        <article>
-          <ul class="development-list">
-            <li class="job-list-item new">
+      <div class="container">
+        <section class="hero">
+          <h2 class="section-title">
+            Talent in the cloud<span class="dot">.</span>
+          </h2>
+          <p class="tagline">
+            Find the best match for your role from all around the world!
+          </p>
+          <a href="#" class="btn btn-purple">Post new job</a>
+        </section>
+        <section class="job-list">
+          <h2 class="section-title">
+            Find the remote job for you<span class="dot">.</span>
+          </h2>
+          <ul class="latest-list">
+            <li class="latest-list-item">
               <a href="#">
-                <span class="job-list-company">Company name</span>
-                <h3 class="job-list-title">Job title</h3>
-                <span class="job-list-location">Fully remote</span>
+                <span class="job-list-company">Company Name</span>
+                <h3 class="job-list-title">Job Title</h3>
+                <span class="job-list-location">100% remote</span>
               </a>
             </li>
           </ul>
-        </article>
-      </section>
+        </section>
+      </div>
     </main>
-    <footer>Footer</footer>
-    <script src="utils/js/app.js" defer></script>
+    <footer><div class="container">Footer</div></footer>
+    <!-- <script src="utils/js/app.js"></script> -->
   </body>
 </html>

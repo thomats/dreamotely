@@ -1,22 +1,26 @@
-$primary-text: #3c3c3c;
-$purple: #9126b5;
-$green: #69f0ae;
+/* COLORS */
+$purple: #573cfe;
+$green: #33d88e;
+$red: #ef6994;
+$yellow: #e2b040;
+$lightGray: #f8f8f8;
+$darkGray: #333740;
 $white: #fff;
 
+/* STYLE RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
+/* GLOBAL STYLES */
 html {
+  background-color: $lightGray;
+  color: $darkGray;
   font-family: "Open Sans", Helvetica, sans-serif;
-  color: $primary-text;
-}
-
-a {
-  text-decoration: none;
-  color: #3c3c3c;
+  font-size: 1rem;
 }
 
 h1,
@@ -26,48 +30,50 @@ h4 {
   font-family: "Work Sans", Helvetica, sans-serif;
 }
 
-.dot {
-  color: $green;
-}
-
-header {
-  border-top: 6px solid $purple;
-  padding: 10px 0;
-  .logo {
-    text-transform: uppercase;
-    font-size: 1.5rem;
-  }
-  .hero {
-    margin: 20px 0;
-    text-align: center;
-  }
+.section-title {
+  font-size: 1.4rem;
+  text-align: center;
 }
 
 .container {
   margin: 0 auto;
-  padding: 10px;
+  width: 90%;
+  max-width: 1140px;
 }
 
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.dot {
+  color: $green;
 }
 
-.job-list-item {
-  margin: 10px 0;
-  padding: 10px;
-  background-color: #f3f3f3;
-  .job-list-company {
-    font-size: 0.8rem;
+/* HEADER STYLES */
+header {
+  padding: 10px 0;
+  border-top: 6px solid $purple;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
   }
-  .job-list-title {
-    font-size: 1.4rem;
-    margin: 5px 0;
+}
+
+/* MAIN STYLES */
+main {
+  section {
+    padding: 20px 0;
+  }
+  .hero {
+    text-align: center;
+    padding: 40px 0;
   }
 }
 
+/* FOOTER STYLES */
 footer {
-  background-color: $primary-text;
+  background: $darkGray;
   color: $white;
+  padding: 40px 0;
 }
