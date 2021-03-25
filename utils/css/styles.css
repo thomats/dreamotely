@@ -8,12 +8,10 @@
   list-style: none;
 }
 
-/* GLOBAL STYLES */
 html {
   background-color: #f8f8f8;
   color: #333740;
   font-family: "Open Sans", Helvetica, sans-serif;
-  font-size: 1rem;
 }
 
 h1,
@@ -21,11 +19,6 @@ h2,
 h3,
 h4 {
   font-family: "Work Sans", Helvetica, sans-serif;
-}
-
-.section-title {
-  font-size: 1.4rem;
-  text-align: center;
 }
 
 .container {
@@ -38,13 +31,25 @@ h4 {
   color: #33d88e;
 }
 
+a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #ef6994;
+  display: inline-block;
+  border-radius: 3px;
+}
+
 /* HEADER STYLES */
 header {
-  padding: 10px 0;
-  border-top: 6px solid #573cfe;
+  background: #573cfe;
+  color: #fff;
 }
 
 header .navbar {
+  padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,25 +61,51 @@ header .navbar {
           align-items: center;
 }
 
-header .navbar .logo {
+header .navbar h1 {
   font-size: 1rem;
   text-transform: uppercase;
 }
 
-/* MAIN STYLES */
-main section {
-  padding: 20px 0;
+header .navbar a {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  font-family: "Work Sans", Helvetica, sans-serif;
 }
 
-main .hero {
+header .hero {
+  padding: 20px 0;
   text-align: center;
-  padding: 40px 0;
+}
+
+header .hero h2 {
+  font-weight: 300;
+}
+
+header .hero .job-search {
+  margin-top: 20px;
+}
+
+header .hero .job-search .search-box {
+  padding: 10px;
+  margin: 0;
+  width: 80%;
+  font-size: 1.1rem;
+  color: lightgray;
+  border-radius: 3px;
+  border: none;
+  display: inline;
+}
+
+header .hero .job-search .search-box-btn {
+  width: 18%;
+  margin: 0;
+  display: inline;
 }
 
 /* FOOTER STYLES */
 footer {
   background: #333740;
   color: #fff;
-  padding: 40px 0;
 }
 /*# sourceMappingURL=styles.css.map */
