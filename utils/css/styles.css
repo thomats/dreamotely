@@ -118,8 +118,11 @@ header .hero .job-search .filter-toggle .fa-angle-down {
   margin-right: 10px;
 }
 
-header .hero #search-filters {
-  padding-top: 20px;
+header .hero #search-filters select {
+  margin-top: 20px;
+  padding: 10px;
+  width: 90%;
+  border-radius: 3px;
 }
 
 header .hero .hidden {
@@ -177,5 +180,12 @@ footer {
   padding: 20px 0;
   background: #333740;
   color: #fff;
+  font-family: "Work Sans";
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+footer .fa-heart {
+  color: #ef6994;
 }
 /*# sourceMappingURL=styles.css.map */

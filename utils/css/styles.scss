@@ -100,7 +100,12 @@ header {
       }
     }
     #search-filters {
-      padding-top: 20px;
+      select {
+        margin-top: 20px;
+        padding: 10px;
+        width: 90%;
+        border-radius: 3px;
+      }
     }
     .hidden {
       display: none;
@@ -152,4 +157,10 @@ footer {
   padding: 20px 0;
   background: $darkGray;
   color: $white;
+  font-family: "Work Sans";
+  font-size: 0.8rem;
+  text-align: center;
+  .fa-heart {
+    color: $red;
+  }
 }

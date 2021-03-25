@@ -28,13 +28,30 @@
             <input
               type="text"
               class="search-box"
-              value="What are you looking for?"
+              placeholder="What are you looking for?"
             />
             <a href="#" class="filter-toggle">
               <i class="fas fa-angle-down"></i>Filter
             </a>
           </form>
-          <div id="search-filters" class="hidden">Search Filters</div>
+          <div id="search-filters" class="hidden">
+            <select name="Category" id="dropwdown-category">
+              <option value="Development">Development</option>
+              <option value="Design">Design</option>
+              <option value="DevOps">DevOps</option>
+              <option value="Marketing">Marketing</option>
+              <option value="Sales">Sales</option>
+            </select>
+            <select name="Location" id="dropwdown-location">
+              <option value="100% Remote">100% Remote</option>
+              <option value="Africa">Africa</option>
+              <option value="Asia">Asia</option>
+              <option value="Europe">Europe</option>
+              <option value="North America">North Amercia</option>
+              <option value="Oceania">Oceania</option>
+              <option value="South America">South America</option>
+            </select>
+          </div>
         </div>
       </div>
     </header>
@@ -43,6 +60,18 @@
         <div class="container">
           <h2 class="section-title">Latest jobs</h2>
           <ul class="latest-jobs-list">
+            <li class="latest-jobs-item new">
+              <h3 class="job-item-title">Director of Partner Development</h3>
+              <span class="job-item-company">OneVision</span>
+              <div class="job-item-location">
+                <span class="job-list-type">
+                  <i class="fas fa-map-marker-alt"></i>100% Remote
+                </span>
+              </div>
+              <div class="job-item-tags">
+                <span class="job-item-category">Design</span>
+              </div>
+            </li>
             <li class="latest-jobs-item">
               <h3 class="job-item-title">Front End Developer</h3>
               <span class="job-item-company">Netflix</span>
@@ -60,7 +89,7 @@
               <span class="job-item-company">Apple</span>
               <div class="job-item-location">
                 <span class="job-list-type">
-                  <i class="fas fa-map-marker-alt"></i>Europe
+                  <i class="fas fa-map-marker-alt"></i>Europe / Africa
                 </span>
               </div>
               <div class="job-item-tags">
@@ -96,7 +125,7 @@
               <span class="job-item-company">Github</span>
               <div class="job-item-location">
                 <span class="job-list-type">
-                  <i class="fas fa-map-marker-alt"></i>100% Remote
+                  <i class="fas fa-map-marker-alt"></i>Asia
                 </span>
               </div>
               <div class="job-item-tags">
@@ -108,7 +137,9 @@
       </section>
     </main>
     <footer>
-      <div class="container">Footer</div>
+      <div class="container">
+        Made in Switzerland with <i class="fas fa-heart"></i>
+      </div>
     </footer>
     <script src="/utils/js/app.js"></script>
   </body>
