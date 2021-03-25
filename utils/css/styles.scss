@@ -31,6 +31,11 @@ h4 {
   color: $green;
 }
 
+.section-title {
+  text-align: center;
+  font-weight: 300;
+}
+
 a {
   text-decoration: none;
 }
@@ -77,6 +82,7 @@ header {
         font-size: 1.1rem;
         color: lightgray;
         border-radius: 3px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
         border: none;
         display: inline;
       }
@@ -89,8 +95,38 @@ header {
   }
 }
 
+main {
+  .latest-jobs {
+    padding: 20px 0;
+    .latest-jobs-item {
+      margin: 20px 0;
+      padding: 10px;
+      background-color: $white;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      .job-item-title {
+        font-weight: 600;
+      }
+      .job-item-company {
+        color: lightgray;
+        display: inline-block;
+        margin: 8px 0;
+      }
+      .job-item-location {
+        color: #687585;
+        .fas {
+          margin-right: 5px;
+        }
+      }
+      .job-item-tags {
+        display: none;
+      }
+    }
+  }
+}
+
 /* FOOTER STYLES */
 footer {
+  padding: 20px 0;
   background: $darkGray;
   color: $white;
 }

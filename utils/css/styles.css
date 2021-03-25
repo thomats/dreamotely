@@ -31,6 +31,11 @@ h4 {
   color: #33d88e;
 }
 
+.section-title {
+  text-align: center;
+  font-weight: 300;
+}
+
 a {
   text-decoration: none;
 }
@@ -93,6 +98,8 @@ header .hero .job-search .search-box {
   font-size: 1.1rem;
   color: lightgray;
   border-radius: 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
   border: none;
   display: inline;
 }
@@ -103,8 +110,43 @@ header .hero .job-search .search-box-btn {
   display: inline;
 }
 
+main .latest-jobs {
+  padding: 20px 0;
+}
+
+main .latest-jobs .latest-jobs-item {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+main .latest-jobs .latest-jobs-item .job-item-title {
+  font-weight: 600;
+}
+
+main .latest-jobs .latest-jobs-item .job-item-company {
+  color: lightgray;
+  display: inline-block;
+  margin: 8px 0;
+}
+
+main .latest-jobs .latest-jobs-item .job-item-location {
+  color: #687585;
+}
+
+main .latest-jobs .latest-jobs-item .job-item-location .fas {
+  margin-right: 5px;
+}
+
+main .latest-jobs .latest-jobs-item .job-item-tags {
+  display: none;
+}
+
 /* FOOTER STYLES */
 footer {
+  padding: 20px 0;
   background: #333740;
   color: #fff;
 }
