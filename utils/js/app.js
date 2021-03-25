@@ -69,25 +69,29 @@ const renderJobs = function (jobs, filters) {
     const header = document.createElement("h3");
     header.className = "latest-jobs-title";
     header.textContent = job.jobTitle;
-    jobsList.appendChild(header);
+    a.appendChild(header);
 
     const companySpan = document.createElement("span");
-    companySpan.className = "latest-jobs-company";
+    companySpan.className = "job-item-company";
     companySpan.textContent = job.company;
-    jobsList.appendChild(companySpan);
+    a.appendChild(companySpan);
 
     const locationDiv = document.createElement("div");
     locationDiv.className = "job-item-location";
-    jobsList.appendChild(locationDiv);
+    a.appendChild(locationDiv);
 
     const typeSpan = document.createElement("span");
     typeSpan.className = "job-list-type";
     typeSpan.textContent = job.location;
     locationDiv.appendChild(typeSpan);
 
+    const locationIcon = document.createElement("i");
+    locationIcon.className = "fas fa-map-marker-alt";
+    typeSpan.prepend(locationIcon);
+
     const tagsDiv = document.createElement("div");
     tagsDiv.className = "job-item-tags";
-    jobsList.appendChild(tagsDiv);
+    a.appendChild(tagsDiv);
 
     const categorySpan = document.createElement("span");
     categorySpan.className = "job-item-category";
