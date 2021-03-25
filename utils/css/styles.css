@@ -137,6 +137,8 @@ main .latest-jobs .latest-jobs-item {
   background-color: #fff;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 main .latest-jobs .latest-jobs-item .job-item-title {
@@ -159,6 +161,11 @@ main .latest-jobs .latest-jobs-item .job-item-location .fas {
 
 main .latest-jobs .latest-jobs-item .job-item-tags {
   display: none;
+}
+
+main .latest-jobs .latest-jobs-item:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 main .latest-jobs .new {
