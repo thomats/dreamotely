@@ -30,8 +30,11 @@
               class="search-box"
               value="What are you looking for?"
             />
-            <input type="button" class="search-box-btn" value="Search" />
+            <a href="#" class="filter-toggle">
+              <i class="fas fa-angle-down"></i>Filter
+            </a>
           </form>
+          <div id="search-filters" class="hidden">Search Filters</div>
         </div>
       </div>
     </header>
@@ -52,7 +55,7 @@
                 <span class="job-item-category">Development</span>
               </div>
             </li>
-            <li class="latest-jobs-item">
+            <li class="latest-jobs-item new">
               <h3 class="job-item-title">Lead UI/UX Designer</h3>
               <span class="job-item-company">Apple</span>
               <div class="job-item-location">
@@ -88,6 +91,18 @@
                 <span class="job-item-category">DevOps</span>
               </div>
             </li>
+            <li class="latest-jobs-item new">
+              <h3 class="job-item-title">Junior React Developer</h3>
+              <span class="job-item-company">Github</span>
+              <div class="job-item-location">
+                <span class="job-list-type">
+                  <i class="fas fa-map-marker-alt"></i>100% Remote
+                </span>
+              </div>
+              <div class="job-item-tags">
+                <span class="job-item-category">Design</span>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -95,6 +110,6 @@
     <footer>
       <div class="container">Footer</div>
     </footer>
-    <!-- <script src="utils/js/app.js"></script> -->
+    <script src="/utils/js/app.js"></script>
   </body>
 </html>
